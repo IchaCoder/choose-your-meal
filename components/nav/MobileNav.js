@@ -23,8 +23,8 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 					className="mx-auto p-4 w-[90%] -mt-20 z-40 relative rounded flex flex-col bg-primary text-white"
 				>
 					<div className="flex justify-between">
-						<Link href={"/"}>
-							<Image src="/logo.jpg" alt="anisarp" width="100" height="50" />{" "}
+						<Link href={"/"} className="font-extrabold text-5xl">
+							MEALS
 						</Link>
 						<AiOutlineClose
 							className="text-white text-xl hover:animate-spin mt-2 cursor-pointer"

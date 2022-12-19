@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
-import Image from "next/image";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
 
