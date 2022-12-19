@@ -12,12 +12,9 @@ export default function Nav() {
 		<>
 			<nav className="flex justify-around bg-primary p-2 text-whiteF">
 				<div className="flex">
-					<Link href={"/"}>
-						<Image src="/logo.jpg" alt="anisarp" width="100" height="50" />
+					<Link href={"/"} className="font-extrabold text-5xl">
+						MEALS
 					</Link>
-					<span className="font-extrabold self-center text-2xl sm:text-3xl tracking-widest">
-						ANISARP
-					</span>
 				</div>
 				<div className="self-center hidden md:inline">
 					<Link
@@ -25,18 +22,6 @@ export default function Nav() {
 						href="/"
 					>
 						Home
-					</Link>
-					<Link
-						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
-						href="/"
-					>
-						Gallery
-					</Link>
-					<Link
-						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
-						href="/"
-					>
-						Projects
 					</Link>
 					<Link
 						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
@@ -52,10 +37,10 @@ export default function Nav() {
 					</Link>
 				</div>
 				<a
-					href="tel:+233246251086"
+					href="tel:+23324444444"
 					className="hidden md:flex items-center hover:tracking-wide transition-all duration-200 ease-linear"
 				>
-					<FaPhoneAlt /> +233-246-251-86
+					<FaPhoneAlt /> +233-244-444-44
 				</a>
 				<FiMenu
 					className="md:hidden text-3xl self-center cursor-pointer flex"
