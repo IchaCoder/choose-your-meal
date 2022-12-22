@@ -1,13 +1,17 @@
-import axios from "axios";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect } from "react";
+import { useState } from "react";
 import Card from "../components/card/Card";
+import Category from "../components/category/Category";
 import Hero from "../components/hero/Hero";
-import Nav from "../components/nav/Nav";
 
 export default function Home({ meals }) {
+	const [newMeals, setNewMeals] = useState(meals);
+
+	const filterMeals = (category) => {
+		const filteredMeals = meals.filter((meal) => meal.strCategory === category);
+		setNewMeals(filteredMeals);
+	};
+
 	return (
 		<>
 			<Head>
@@ -22,8 +26,9 @@ export default function Home({ meals }) {
 					<h2 className="text-4xl text-center font-bold pb-8">
 						Dont look back
 					</h2>
+					<Category meals={meals} filterMeals={filterMeals} />
 					<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-						{meals.slice(0, 10).map((meal) => {
+						{newMeals.slice(0, 12).map((meal) => {
 							const {
 								idMeal: id,
 								strArea: origin,
